@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Moreno Restaurant | Ecuadorian food in Union City, NJ</title>
+<meta name="description" content="Ecuadorian ceviche, whole crab, bolones and more at 4105 Park Ave, Union City NJ. Rated 4.9 by 2,385 guests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0c2a47;
+  --navy-deep:#071b30;
+  --coral:#f0553a;
+  --lime:#d2e65a;
+  --sea:#eef4e4;
+  --yellow:#f6c945;
+  --white:#fffffc;
+  --ink:#10243a;
+  --line:rgba(255,255,252,.2);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--navy-deep);color:var(--white);line-height:1.6;font-size:18px}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.demo{background:var(--lime);color:var(--navy-deep);font-size:13px;text-align:center;padding:6px 12px;font-weight:600}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(7,27,48,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;text-decoration:none;letter-spacing:-.02em}
+.nav nav{display:flex;gap:22px;align-items:center}
+.nav nav a{text-decoration:none;font-size:16px;opacity:.85}
+.nav nav a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 24px;border-radius:12px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:17px;font-family:inherit}
+.btn.primary{background:var(--coral);color:var(--white)}
+.btn.primary:hover{background:#ff6a4f}
+.btn.ghost{border-color:var(--white);color:var(--white);background:transparent}
+.btn.ghost:hover{background:var(--white);color:var(--navy-deep)}
+.nav .btn{padding:9px 18px;font-size:16px}
+
+/* hero */
+.hero{background:var(--navy);padding:64px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(60px,11vw,140px)}
+.hero .sub{font-family:'Bricolage Grotesque';font-weight:700;font-size:clamp(22px,3vw,32px);color:var(--lime);margin:10px 0 18px;letter-spacing:-.01em}
+.hero p.lede{max-width:44ch;font-size:20px;margin-bottom:28px;opacity:.93}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{margin-top:26px;display:flex;gap:22px;flex-wrap:wrap;font-size:16px;opacity:.92}
+.facts b{color:var(--lime)}
+
+/* plate */
+.plate-wrap{text-align:center}
+svg.plate{width:min(380px,82vw);height:auto;display:block;margin:0 auto}
+.wedge{cursor:pointer;transition:transform .25s ease;transform-origin:200px 200px;outline:none;-webkit-tap-highlight-color:transparent}
+.wedge:focus{outline:none}
+.wedge:hover,.wedge:focus-visible,.wedge.on{transform:scale(1.045)}
+.wedge:focus-visible{outline:none}
+.wedge:focus-visible path{stroke:var(--white);stroke-width:5}
+.plate-label{min-height:84px;margin-top:14px;font-size:17px;max-width:36ch;margin-inline:auto}
+.plate-label b{display:block;font-family:'Bricolage Grotesque';font-size:24px;color:var(--yellow);margin-bottom:2px}
+@media (prefers-reduced-motion:reduce){.wedge{transition:none}}
+
+section{padding:84px 0}
+.light{background:var(--sea);color:var(--ink)}
+.sec-head{max-width:58ch;margin-bottom:36px}
+.sec-head h2{font-size:clamp(38px,5.5vw,62px)}
+.sec-head p{margin-top:12px;opacity:.8}
+
+/* menu */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tab{padding:10px 18px;border-radius:10px;border:2px solid var(--navy);background:transparent;color:var(--navy);font-weight:700;cursor:pointer;font-size:16px;font-family:inherit}
+.tab[aria-selected="true"]{background:var(--navy);color:var(--white)}
+.menu-list{display:none;grid-template-columns:1fr 1fr;gap:0 56px}
+.menu-list.on{display:grid}
+.item{display:flex;align-items:baseline;gap:12px;padding:14px 0;border-bottom:1px solid rgba(16,36,58,.18)}
+.item .t{flex:1}
+.item .n{font-weight:700;display:block}
+.item .d{display:block;font-size:15px;opacity:.72;line-height:1.4}
+.item .p{font-family:'Bricolage Grotesque';font-weight:700;font-size:20px;color:var(--coral);white-space:nowrap}
+.menu-note{margin-top:22px;font-size:15px;opacity:.7}
+
+/* reviews */
+.reviews{background:var(--navy)}
+.score{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.score .big{font-family:'Bricolage Grotesque';font-weight:800;font-size:110px;line-height:.9;color:var(--lime)}
+.stars{color:var(--yellow);font-size:28px;letter-spacing:3px}
+.score p{opacity:.9}
+blockquote{margin-top:40px;max-width:24ch;font-family:'Bricolage Grotesque';font-weight:700;font-size:clamp(30px,4.6vw,52px);line-height:1.08;letter-spacing:-.015em}
+blockquote cite{display:block;font-family:'Source Sans 3';font-weight:400;font-size:16px;font-style:normal;margin-top:14px;opacity:.8;letter-spacing:0}
+.review-cta{margin-top:30px}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+dl{display:grid;grid-template-columns:110px 1fr;gap:14px 12px}
+dt{font-weight:700;color:var(--coral)}
+dd a{font-weight:700}
+.mapbox{background:var(--navy);color:var(--white);border-radius:18px;padding:32px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between}
+.mapbox h3{font-size:36px}
+
+footer{background:var(--navy-deep);padding:30px 0;font-size:14px;opacity:.95}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:820px){
+  .hero .wrap,.visit-grid{grid-template-columns:1fr}
+  .menu-list.on{grid-template-columns:1fr}
+  .nav nav a.hide-sm{display:none}
+  section{padding:60px 0}
+  .hero{padding:44px 0 60px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo">Design preview made for Moreno Restaurant. Not the live site.</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Moreno</a>
+    <nav aria-label="Main">
+      <a class="hide-sm" href="#menu">Menu</a>
+      <a class="hide-sm" href="#reviews">Reviews</a>
+      <a class="hide-sm" href="#visit">Visit</a>
+      <a class="btn primary" href="tel:+12013055568">Call (201) 305-5568</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Moreno</h1>
+      <div class="sub">Ecuadorian food, Union City</div>
+      <p class="lede">Ceviche, whole crab, bolones and stews the way they are made on the Ecuadorian coast. People drive an hour for it.</p>
+      <div class="cta">
+        <a class="btn primary" href="tel:+12013055568">Call to order</a>
+        <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=Moreno+Restaurant+4105+Park+Ave+Union+City+NJ+07087" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="facts">
+        <span><b>4.9</b> on Google, 2,385 reviews</span>
+        <span>4105 Park Ave, Union City</span>
+        <span>$20 to $40 per person</span>
+      </div>
+    </div>
+    <div class="plate-wrap">
+      <svg class="plate" viewBox="0 0 400 400" role="group" aria-label="The Bandera plate. Select a part to read about it.">
+        <circle cx="200" cy="200" r="190" fill="#fffffc"/>
+        <circle cx="200" cy="200" r="172" fill="#f1ede0"/>
+        <g class="wedge" tabindex="0" role="button" data-name="Ceviche" data-text="Fresh ceviche with chifles or rice. Fish, shrimp, black clam and crab are all on the menu." aria-label="Ceviche">
+          <path d="M200 200 L200 40 A160 160 0 0 1 338.6 120 Z" fill="#f0553a"/>
+          <circle cx="262" cy="98" r="9" fill="#fffffc" opacity=".85"/><circle cx="292" cy="124" r="9" fill="#fffffc" opacity=".85"/><circle cx="250" cy="132" r="7" fill="#fffffc" opacity=".85"/>
+        </g>
+        <g class="wedge" tabindex="0" role="button" data-name="Seco de chivo" data-text="Traditional goat stew served with yellow rice and sweet plantains." aria-label="Seco de chivo">
+          <path d="M200 200 L338.6 120 A160 160 0 0 1 200 360 Z" fill="#9b5a2c"/>
+          <path d="M260 220 q18 -14 36 0" stroke="#d9a066" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M246 262 q18 -14 36 0" stroke="#d9a066" stroke-width="7" fill="none" stroke-linecap="round"/>
+        </g>
+        <g class="wedge" tabindex="0" role="button" data-name="Guatita" data-text="Ecuadorian beef tripe cooked with peanut butter and potato, served with yellow rice and sweet plantains." aria-label="Guatita">
+          <path d="M200 200 L200 360 A160 160 0 0 1 61.4 120 L200 200 Z" fill="#f6c945"/>
+          <circle cx="140" cy="250" r="10" fill="#e0a92a"/><circle cx="116" cy="214" r="8" fill="#e0a92a"/><circle cx="158" cy="294" r="8" fill="#e0a92a"/>
+        </g>
+        <g class="wedge" tabindex="0" role="button" data-name="Sweet plantains" data-text="Fried sweet plantains and fried green tostones come with most plates." aria-label="Plantains">
+          <path d="M200 200 L61.4 120 A160 160 0 0 1 200 40 Z" fill="#d2e65a"/>
+          <ellipse cx="138" cy="92" rx="16" ry="9" fill="#a9bf36" transform="rotate(-30 138 92)"/><ellipse cx="168" cy="120" rx="16" ry="9" fill="#a9bf36" transform="rotate(-30 168 120)"/>
+        </g>
+        <circle cx="200" cy="200" r="34" fill="#fffffc"/>
+        <text x="200" y="206" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="17" fill="#0c2a47">Bandera</text>
+      </svg>
+      <div class="plate-label" id="plateLabel" aria-live="polite"><b>Bandera</b>A tour around Ecuador on one plate. Tap a part of the plate.</div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="light">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The menu</h2>
+      <p>Dishes and prices from the restaurant's online ordering menu. Call to confirm today's availability.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Menu sections">
+      <button class="tab" role="tab" aria-selected="true" data-t="antojitos">Antojitos</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="sopas">Soups</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="ceviches">Ceviches</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="cangrejos">Crab</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="tipicos">Típicos</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="parrilla">Grill</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="mariscos">Seafood</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="postres">Desserts</button>
+    </div>
+
+    <div class="menu-list on" id="antojitos">
+      <div class="item"><span class="t"><span class="n">Bolón de chicharrón</span><span class="d">Mashed fried green plantain with crispy pork</span></span><span class="p">$14.95</span></div>
+      <div class="item"><span class="t"><span class="n">Bolón de queso</span><span class="d">Mashed fried green plantain with tropical cheese</span></span><span class="p">$11.95</span></div>
+      <div class="item"><span class="t"><span class="n">Bolón mixto</span></span><span class="p">$14.95</span></div>
+      <div class="item"><span class="t"><span class="n">Corviche</span><span class="d">Green plantain pastry, peanut sauce, albacore</span></span><span class="p">$8.95</span></div>
+      <div class="item"><span class="t"><span class="n">Empanadas de verde</span><span class="d">Crispy green plantain turnover with tropical cheese</span></span><span class="p">$12.95</span></div>
+      <div class="item"><span class="t"><span class="n">Muchines de yuca</span><span class="d">Cassava croquettes stuffed with mozzarella</span></span><span class="p">$12.95</span></div>
+      <div class="item"><span class="t"><span class="n">Humitas</span><span class="d">Fresh corn cake wrapped in corn leaf</span></span><span class="p">$6.95</span></div>
+      <div class="item"><span class="t"><span class="n">Maduros con queso</span><span class="d">Sweet plantains with tropical cheese</span></span><span class="p">$12.95</span></div>
+    </div>
+
+    <div class="menu-list" id="sopas">
+      <div class="item"><span class="t"><span class="n">Caldo de bola</span><span class="d">Beef-stuffed plantain soup with white rice</span></span><span class="p">$21.95</span></div>
+      <div class="item"><span class="t"><span class="n">Caldo de gallina</span></span><span class="p">$18.95</span></div>
+      <div class="item"><span class="t"><span class="n">Caldo de pata</span></span><span class="p">$20.95</span></div>
+      <div class="item"><span class="t"><span class="n">Caldo marinero con cangrejo</span><span class="d">Seafood soup with Ecuadorian crab</span></span><span class="p">$36.95</span></div>
+      <div class="item"><span class="t"><span class="n">Encebollado de albacora</span><span class="d">Albacore soup with rice or chifles</span></span><span class="p">$18.95</span></div>
+      <div class="item"><span class="t"><span class="n">Encebollado mixto</span><span class="d">Albacore, shrimp and calamari</span></span><span class="p">$23.95</span></div>
+      <div class="item"><span class="t"><span class="n">Sopa del día</span></span><span class="p">$8.95</span></div>
+    </div>
+
+    <div class="menu-list" id="ceviches">
+      <div class="item"><span class="t"><span class="n">Ceviche de pescado</span><span class="d">Fish, with white rice or chifles</span></span><span class="p">$24.95</span></div>
+      <div class="item"><span class="t"><span class="n">Ceviche de camarón</span><span class="d">Shrimp, with white rice or chifles</span></span><span class="p">$26.95</span></div>
+      <div class="item"><span class="t"><span class="n">Ceviche de concha</span><span class="d">Black clam, with white rice or chifles</span></span><span class="p">$28.95</span></div>
+      <div class="item"><span class="t"><span class="n">Ceviche mixto</span><span class="d">Fish, shrimp and calamari</span></span><span class="p">$29.95</span></div>
+    </div>
+
+    <div class="menu-list" id="cangrejos">
+      <div class="item"><span class="t"><span class="n">Cangrejada criolla</span><span class="d">Three whole crabs, sweet plantains, rice and curtido</span></span><span class="p">$39.95</span></div>
+      <div class="item"><span class="t"><span class="n">Encocado de cangrejo</span></span><span class="p">$44.95</span></div>
+      <div class="item"><span class="t"><span class="n">Cangrejos al ajillo</span></span><span class="p">$44.95</span></div>
+      <div class="item"><span class="t"><span class="n">Trilogía de cangrejo</span></span><span class="p">$49.95</span></div>
+    </div>
+
+    <div class="menu-list" id="tipicos">
+      <div class="item"><span class="t"><span class="n">Bandera</span><span class="d">Guatita, seco de chivo and ceviche with yellow rice and sweet plantains</span></span><span class="p">$30.95</span></div>
+      <div class="item"><span class="t"><span class="n">Yapingachos</span><span class="d">Potato patties, peanut sauce, steak, sausage, plantains, egg</span></span><span class="p">$28.95</span></div>
+      <div class="item"><span class="t"><span class="n">Chaulafán</span><span class="d">Ecuadorian fried rice with pork, chicken, shrimp and egg</span></span><span class="p">$26.95</span></div>
+      <div class="item"><span class="t"><span class="n">Guatita</span><span class="d">Beef tripe in peanut sauce with potato and yellow rice</span></span><span class="p">$23.95</span></div>
+      <div class="item"><span class="t"><span class="n">Seco de chivo</span><span class="d">Traditional goat stew, yellow rice, sweet plantains</span></span><span class="p">$23.95</span></div>
+      <div class="item"><span class="t"><span class="n">Seco de gallina</span><span class="d">Traditional hen stew, yellow rice, sweet plantains</span></span><span class="p">$19.95</span></div>
+      <div class="item"><span class="t"><span class="n">Don Moro carne asada</span></span><span class="p">$27.95</span></div>
+      <div class="item"><span class="t"><span class="n">Desayuno montubio</span><span class="d">Bolón mixto, pepper steak and fried eggs</span></span><span class="p">$23.95</span></div>
+    </div>
+
+    <div class="menu-list" id="parrilla">
+      <div class="item"><span class="t"><span class="n">Carne asada</span><span class="d">Marinated sirloin, rice and beans</span></span><span class="p">$24.95</span></div>
+      <div class="item"><span class="t"><span class="n">Churrasco ecuatoriano</span><span class="d">Steak with onion, tomato and pepper, rice, fries, fried eggs</span></span><span class="p">$27.95</span></div>
+      <div class="item"><span class="t"><span class="n">Costillas de res</span><span class="d">Grilled beef ribs, rice and beans</span></span><span class="p">$31.95</span></div>
+      <div class="item"><span class="t"><span class="n">Entraña a la parrilla</span><span class="d">12 oz grilled skirt steak, rice and beans</span></span><span class="p">$35.95</span></div>
+      <div class="item"><span class="t"><span class="n">Chuletas a la parrilla</span><span class="d">Marinated pork chops, rice and beans</span></span><span class="p">$21.95</span></div>
+      <div class="item"><span class="t"><span class="n">Pechuga a la parrilla</span><span class="d">Chicken breast, rice and beans</span></span><span class="p">$19.95</span></div>
+    </div>
+
+    <div class="menu-list" id="mariscos">
+      <div class="item"><span class="t"><span class="n">Arroz con camarones</span><span class="d">Shrimp rice with a small ceviche and sweet plantains</span></span><span class="p">$26.95</span></div>
+      <div class="item"><span class="t"><span class="n">Arroz marinero</span><span class="d">Seafood rice, small fish ceviche, fried fish, plantains</span></span><span class="p">$36.95</span></div>
+      <div class="item"><span class="t"><span class="n">Bollo de pescado</span><span class="d">Plantain and fish in peanut sauce, wrapped in banana leaf</span></span><span class="p">$20.95</span></div>
+      <div class="item"><span class="t"><span class="n">Encocado de pescado</span><span class="d">Sea bass in coconut sauce, rice, green plantains</span></span><span class="p">$25.95</span></div>
+      <div class="item"><span class="t"><span class="n">Cazuela de pescado</span><span class="d">Albacore casserole with plantain and peanut sofrito</span></span><span class="p">$22.95</span></div>
+      <div class="item"><span class="t"><span class="n">Branzino frito entero</span><span class="d">Whole fried fish with rice, plantains, onion salad</span></span><span class="p">$36.95</span></div>
+    </div>
+
+    <div class="menu-list" id="postres">
+      <div class="item"><span class="t"><span class="n">Tres leches</span><span class="d">Caramel</span></span><span class="p">$10.95</span></div>
+      <div class="item"><span class="t"><span class="n">Flan de la casa</span></span><span class="p">$10.95</span></div>
+      <div class="item"><span class="t"><span class="n">Choco-flan</span></span><span class="p">$10.95</span></div>
+      <div class="item"><span class="t"><span class="n">Cheesecake de maracuyá</span></span><span class="p">$10.95</span></div>
+      <div class="item"><span class="t"><span class="n">Higos con queso</span></span><span class="p">$12.95</span></div>
+      <div class="item"><span class="t"><span class="n">Batidos</span><span class="d">Maracuyá, mora, naranjilla, guanábana</span></span><span class="p">$6.95</span></div>
+    </div>
+    <p class="menu-note">Prices come from the online ordering menu and can change. The restaurant confirms the final menu.</p>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <div class="sec-head"><h2>What guests say</h2></div>
+    <div class="score">
+      <div class="big">4.9</div>
+      <div>
+        <div class="stars" aria-label="4.9 out of 5 stars">★★★★★</div>
+        <p>2,385 Google reviews</p>
+      </div>
+    </div>
+    <blockquote>
+      “Best Ecuadorian food in NJ and driving 1hr+ is 100% worth it.”
+      <cite>Google review</cite>
+    </blockquote>
+    <div class="review-cta">
+      <a class="btn ghost" href="https://www.google.com/search?q=moreno+restaurant+4105+park+ave+union+city+reviews" target="_blank" rel="noopener">Read all reviews on Google</a>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="light">
+  <div class="wrap">
+    <div class="sec-head"><h2>Come hungry</h2></div>
+    <div class="visit-grid">
+      <dl>
+        <dt>Address</dt><dd>4105 Park Ave<br>Union City, NJ 07087</dd>
+        <dt>Phone</dt><dd><a href="tel:+12013055568">(201) 305-5568</a></dd>
+        <dt>Hours</dt><dd>Call for today's hours.</dd>
+        <dt>Price</dt><dd>About $20 to $40 per person</dd>
+        <dt>Cuisine</dt><dd>Ecuadorian</dd>
+      </dl>
+      <div class="mapbox">
+        <h3>Find us on Park Ave</h3>
+        <div class="cta" style="margin-top:20px">
+          <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=Moreno+Restaurant+4105+Park+Ave+Union+City+NJ+07087" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn ghost" href="tel:+12013055568">Call now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Moreno Restaurant · 4105 Park Ave, Union City, NJ 07087 · (201) 305-5568</span>
+    <span>Preview concept. Rating and counts from Google, Oct 2026.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var label=document.getElementById('plateLabel');
+  document.querySelectorAll('.wedge').forEach(function(w){
+    function pick(){
+      document.querySelectorAll('.wedge').forEach(function(x){x.classList.remove('on')});
+      w.classList.add('on');
+      label.innerHTML='<b></b>';
+      label.firstChild.textContent=w.dataset.name;
+      label.appendChild(document.createTextNode(w.dataset.text));
+    }
+    w.addEventListener('click',pick);
+    w.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});
+  });
+  var tabs=document.querySelectorAll('.tab');
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(x){x.setAttribute('aria-selected','false')});
+      t.setAttribute('aria-selected','true');
+      document.querySelectorAll('.menu-list').forEach(function(l){l.classList.remove('on')});
+      document.getElementById(t.dataset.t).classList.add('on');
+    });
+  });
+})();
+</script>
+</body>
+</html>
